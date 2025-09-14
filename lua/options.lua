@@ -8,6 +8,7 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.keymap.set("n", "<leader>tt", ":terminal<CR>")
-vim.keymap.set("t", '<leader><Esc>', "<C-\\><C-n>")
+-- vim.keymap.set("n", "<leader>t", ":terminal<CR>")
+-- vim.keymap.set("t", '<Esc>', "<C-\\><C-n>")
 vim.keymap.set('n', '<leader>w', ':bd<CR>')
+vim.keymap.set('i', '<Esc>', '<Esc>', { noremap = true })
