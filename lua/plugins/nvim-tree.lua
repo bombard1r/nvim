@@ -11,6 +11,18 @@ return {
         vim.keymap.set('n', 'e', ':Neotree filesystem toggle right<CR>')
         require("neo-tree").setup({
             close_if_last_window = true,
+            window = {
+                mappings = {
+                    ["e"] = "close_window", -- or "toggle" doesn’t exist, so close works here
+                },
+            },
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                    hide_dotfiles = false,
+                    hide_gitignored = false,
+                },
+            },
         })
     end
 }
