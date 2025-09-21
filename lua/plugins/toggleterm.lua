@@ -1,9 +1,13 @@
 return {
     "akinsho/toggleterm.nvim",
     version = "*",
+    cmd = "ToggleTerm",
+    keys = {
+        { "<C-\\>", desc = "Toggle terminal" },
+    },
     config = function()
         require("toggleterm").setup({
-            open_mapping = [[<leader>t]],
+            open_mapping = [[<C-\>]],
             shade_terminals = true,
             direction = "float",
             float_opts = {
