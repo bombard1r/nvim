@@ -8,8 +8,8 @@ return {
                 auto_trigger = true,
                 keymap = {
                     accept = "<C-j>",
-                    next = "<C-]>",
-                    prev = "<C-[>",
+                    next = "<C-;>",
+                    prev = "<C-:>",
                 },
             },
         })
